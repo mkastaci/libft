@@ -1,0 +1,32 @@
+#include "libft.h"
+
+char *ft_strcat(char *s1, const char *s2)
+{
+	unsigned int i;
+	unsigned int ii;
+
+	i = 0;
+	ii = 0;
+	while (s1[i])
+		i++;
+	while (s2[ii])
+	{
+		s1[i] = s2[ii];
+		i++;
+		ii++;
+	}
+	s1[i] = '\0';
+return (s1);
+}
+
+
+/*
+int main()
+{
+	char lol[50] = "kastaci";
+	char loll[50]  = "mikail";
+	printf("le vrai : %s \n", strcat(loll, lol));
+	printf("le mien : %s \n", ft_strcat(loll, lol));
+	return (0);
+
+}*/

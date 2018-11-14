@@ -12,10 +12,12 @@ char	*ft_strdup(const char *s1)
 	return (cp);
 }
 
-
+/*
 int main()
 {
 	char lol[50] = "mikail";
-	printf("%s \n", ft_strdup(lol));
+	char *loll;
+	loll = ft_strdup(lol);
+	printf("%s \n", loll);
 	return (0);
-}
+}*/
