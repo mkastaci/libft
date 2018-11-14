@@ -1,42 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   memmove.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/14 12:41:33 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/14 12:46:05 by mkastaci         ###   ########.fr       */
+/*   Created: 2018/11/14 13:47:12 by mkastaci          #+#    #+#             */
+/*   Updated: 2018/11/14 14:08:49 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *s1, const char *s2, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned int i;
-	unsigned int ii;
+	char		*tmp_dst;
+	const char	*tmp2_src;
 
-	i = 0;
-	ii = 0;
-	while (s1[i])
-		i++;
-	while (n--)
+	tmp_dst = dst;
+	tmp2_src = src;
+	if (len <= 0)
+		return (dst);
+	if (tmp_dst < tmp2_src)
 	{
-		s1[i] = s2[ii];
-		i++;
-		ii++;
+		while (len-- > 0)
+			*tmp_dst++ = *tmp2_src++;
 	}
-	s1[i] = '\0';
-	return (s1);
+	else
+	{
+		tmp_dst += len;
+		tmp2_src += len;
+		while (len-- > 0)
+			*--tmp_dst = *--tmp2_src;
+	}
+	return (dst);
 }
 
 /*
 int main()
 {
 	char lol[50] = "kastaci";
-	char loll[50]  = "mikail";
-	printf("le vrai : %s \n", strncat(loll, lol, 3));
-	printf("le mien : %s \n", ft_strncat(loll, lol, 3));
-	return (0);
-}*/
+	char loll[50] = "mikail";
+
+	void *s1 = lol;
+	void *s2 = loll;
+	printf("%s\n", (char*)ft_memmove(s1, s2, 4));
+}
+*/
