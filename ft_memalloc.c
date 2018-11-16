@@ -1,4 +1,5 @@
 /* ************************************************************************** */
+
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ft_memalloc.c                                      :+:      :+:    :+:   */
@@ -20,6 +21,8 @@ void	*ft_memalloc(size_t size)
 	if (p == NULL)
 		return (NULL);
 	else
-		ft_bzero(p, 4);
-	return (p);
+	{
+		ft_bzero(p, size);
+		return (p);
+	}
 }
