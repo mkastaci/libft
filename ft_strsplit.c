@@ -6,13 +6,13 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/16 13:55:09 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/16 14:01:01 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 16:16:10 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft"
+#include "libft.h"
 
-static int		ft_nbmot(char *s, char c)
+static int	ft_nbmot(char *s, char c)
 {
 	int		i;
 	int		mot;
@@ -33,7 +33,7 @@ static int		ft_nbmot(char *s, char c)
 	return (i);
 }
 
-static int		ft_strlenlim(const char *s, char c)
+static int	ft_strlenlim(const char *s, char c)
 {
 	int		len;
 

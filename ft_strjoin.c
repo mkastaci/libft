@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 17:21:48 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/14 17:34:21 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:30:22 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ptr[i] = '\0';
 	return (ptr);
 }
-
-/*
-int main()
-{
-	char lol[50] = "mikail";
-	char loll[50] = "kastaci";
-	printf("%s \n", ft_strjoin(lol, loll));
-	return (0);
-}*/

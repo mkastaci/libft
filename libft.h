@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 14:17:47 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/16 14:15:56 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 15:20:56 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 void	ft_strclr(char *s);
 void	ft_strdel(char **as);
+char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strnew(size_t size);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 int		ft_strequ(char const *s1, char const *s2);
@@ -68,5 +69,6 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr(char const *s);
 void	ft_putstr_fd(char const *s, int fd);
 char	**ft_strsplit(char const *s, char c);
+char	*ft_itoa(int n);
 
 #endif

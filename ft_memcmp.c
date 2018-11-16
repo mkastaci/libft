@@ -1,38 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memchr.c                                           :+:      :+:    :+:   */
+/*   memcmp.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/14 12:26:33 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/14 12:38:02 by mkastaci         ###   ########.fr       */
+/*   Created: 2018/11/14 12:26:39 by mkastaci          #+#    #+#             */
+/*   Updated: 2018/11/16 14:32:30 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t			i;
-	unsigned char	*str;
+	unsigned char*p1;
+	unsigned char*p2;
 
-	i = 0;
-	str = (unsigned char*)s;
-	while (i < n)
+	p1 = (unsigned char *)s1;
+	p2 = (unsigned char *)s2;
+	while (n--)
 	{
-		if (str[i] == (unsigned char)c)
-			return (str + i);
-		i++;
+		if (*p1 != *p2)
+			return (*p1 - *p2);
+		p1++;
+		p2++;
 	}
-	return (NULL);
-}
-/*
-int main()
-{
-	char lol[50] = "mikail test le code";
-	printf("%s \n", lol);
-	printf("on a trouver : %s \n", ft_memchr(lol, 'e', 9));
-	printf("%s \n", memchr(lol, 'e', 9));
 	return (0);
-}*/
+}

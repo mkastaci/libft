@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 12:26:23 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/14 12:37:15 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:32:52 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,3 @@ void	*ft_memset(void *b, int c, size_t len)
 		*pb++ = (unsigned char)c;
 	return (b);
 }
-
-/*
-int main()
-{
-	char str[50] = "mikail teste le code ";
-	printf("\nBefore memset(): %s\n", str);
-
-	// Fill 8 characters starting from str[13] with '.'
-	ft_memset(str, '&', 3*sizeof(char));
-
-	printf("After memset():  %s", str);
-
-	return 0;
-}*/

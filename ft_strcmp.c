@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 12:40:59 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/14 12:44:42 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 16:00:58 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,15 @@
 
 int		ft_strcmp(const char *s1, const char *s2)
 {
-	unsigned int i;
+	int				i;
+	unsigned char	*ss1;
+	unsigned char	*ss2;
 
+	ss1 = (unsigned char *)s1;
+	ss2 = (unsigned char *)s2;
 	i = 0;
-	while (s1[i] != '\0' || s2[i] != '\0')
-	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+	while (ss1[i] == ss2[i] && ss1[i] != '\0'
+			&& ss2[i] != '\0')
 		i++;
-	}
-	return (0);
+	return (ss1[i] - ss2[i]);
 }
-
-/*
-int main()
-{
-	char lol[50] = "aaaaa";
-	char loll[50]  = "aaaa";
-	printf("le vrai : %d \n", strcmp(lol,loll));
-	printf("le mien : %d \n", ft_strcmp(lol, loll));
-	return (0);
-}*/

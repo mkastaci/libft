@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 12:25:52 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/14 12:36:26 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:28:26 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,3 @@ void	ft_bzero(void *s, size_t n)
 		*str++ = '\0';
 	}
 }
-
-/*
-int main()
-{
-	char str[50] = "salut je mapelle mikail";
-	printf("before : %s \n", str);
-	ft_bzero(str, 4);
-	printf("after : %s \n", str);
-	return (0);
-
-}*/

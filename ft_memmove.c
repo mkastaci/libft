@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 13:47:12 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/14 14:08:49 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:29:14 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-
-/*
-int main()
-{
-	char lol[50] = "kastaci";
-	char loll[50] = "mikail";
-
-	void *s1 = lol;
-	void *s2 = loll;
-	printf("%s\n", (char*)ft_memmove(s1, s2, 4));
-}
-*/

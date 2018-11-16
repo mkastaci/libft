@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 12:42:03 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/14 12:47:16 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:31:20 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,14 +40,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
-/*
-int main()
-{
-	char lol[50] = "mikailtestlecode";
-	char loll[50] = "ail";
-
-	printf("le vrai : %s", strnstr(lol, loll, 5));
-	printf("le mien : %s", ft_strnstr(lol, loll, 5));
-	return (0);
-}*/

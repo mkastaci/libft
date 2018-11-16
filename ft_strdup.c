@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 12:41:12 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/14 12:44:02 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:30:13 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,3 @@ char	*ft_strdup(const char *s1)
 		cp = ft_strcpy(cp, s1);
 	return (cp);
 }
-
-/*
-int main()
-{
-	char lol[50] = "mikail";
-	char *loll;
-	loll = ft_strdup(lol);
-	printf("%s \n", loll);
-	return (0);
-}*/

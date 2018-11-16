@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 12:41:28 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/14 14:09:59 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:30:30 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,3 @@ size_t		ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-
-/*
-int main(int argc, char **argv)
-{
-	if (argc)
-	{
-		printf("le vrai : %lu \n", strlen(argv[1]));
-		printf("le mien : %lu \n", ft_strlen(argv[1]));
-	}
-	return (0);
-}*/

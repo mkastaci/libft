@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 12:23:34 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/15 14:38:50 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:32:35 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,13 +56,3 @@ int				ft_atoi(const char *str)
 	}
 	return ((int)res);
 }
-/*
-int		main(int argc, char **argv)
-{
-	if (argc == 2)
-	{
-		printf("le vrai : %d   \n", atoi(argv[1]));
-		printf("le mien : %d  \n", ft_atoi(argv[1]));
-	}
-	return (0);
-}*/

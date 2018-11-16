@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 17:34:50 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/15 14:01:18 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:31:38 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,3 @@ char	*ft_strtrim(char const *s)
 	else
 		return (ptr = ft_strsub(s, i, j - i + 1));
 }
-
-/*
-int main()
-{
-	char *lol = "   mikail\t\t\t\t\t";
-	printf("avant : %s\n", lol);
-	lol = ft_strtrim(lol);
-	printf("apres : %s\n", lol);
-	return (0);
-}*/

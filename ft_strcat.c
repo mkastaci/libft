@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 12:40:42 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/14 12:43:04 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:29:27 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,3 @@ char	*ft_strcat(char *s1, const char *s2)
 	s1[i] = '\0';
 	return (s1);
 }
-
-/*
-   int main()
-   {
-   char lol[50] = "kastaci";
-   char loll[50]  = "mikail";
-   printf("le vrai : %s \n", strcat(loll, lol));
-   printf("le mien : %s \n", ft_strcat(loll, lol));
-   return (0);
-
-   }*/
