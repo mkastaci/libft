@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 14:17:47 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/14 17:30:28 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:15:56 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strtrim(char const *s);
 int		ft_isalpha(int c);
 int		ft_isalnum(int c);
 int		ft_isdigit(int c);
@@ -58,5 +59,14 @@ int		ft_isprint(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_atoi(const char *str);
+void	ft_putchar(char c);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putendl(char const *s);
+void	ft_putendl_fd(char const *s, int fd);
+void	ft_putnbr(int n);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putstr(char const *s);
+void	ft_putstr_fd(char const *s, int fd);
+char	**ft_strsplit(char const *s, char c);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 16:53:06 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/14 17:00:29 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/16 14:17:00 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
-	int i;
+	unsigned int i;
 
 	i = 0;
 	if (s1 == NULL || s2 == NULL)

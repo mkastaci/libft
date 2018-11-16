@@ -6,20 +6,36 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 12:23:34 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/14 16:17:01 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/15 14:38:50 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *str)
+static int		check_size_long(int neg, long res, char c)
 {
-	int i;
-	int neg;
-	int res;
+	long tmp;
+
+	tmp = res;
+	res = res * 10 + (c - '0') * neg;
+	if (neg == 1 && res < tmp)
+		return (-2);
+	else if (neg == -1 && res > tmp)
+	{
+		return (-1);
+	}
+	else
+		return (0);
+}
+
+int				ft_atoi(const char *str)
+{
+	int		i;
+	int		neg;
+	long	res;
 
 	i = 0;
-	neg = 0;
+	neg = 1;
 	res = 0;
 	while (str[i] == '\t' || str[i] == '\n' || str[i] == ' ' || str[i] == '\r'
 			|| str[i] == '\f' || str[i] == '\v')
@@ -28,27 +44,25 @@ int		ft_atoi(const char *str)
 		i++;
 	else if (str[i] == '-')
 	{
-		neg = 1;
+		neg = -1;
 		i++;
 	}
 	while (str[i] >= 48 && str[i] <= 57)
 	{
-		res = res * 10 + str[i] - '0';
+		if (check_size_long(neg, res, str[i]) < 0)
+			return (check_size_long(neg, res, str[i]) + 1);
+		res = res * 10 + (str[i] - '0') * neg;
 		i++;
 	}
-	if (neg == 1)
-		return (res *= -1);
-	return (res);
+	return ((int)res);
 }
-
 /*
-int main(int argc, char **argv)
+int		main(int argc, char **argv)
 {
 	if (argc == 2)
 	{
 		printf("le vrai : %d   \n", atoi(argv[1]));
-		printf("le mien %d  \n", ft_atoi(argv[1]));
+		printf("le mien : %d  \n", ft_atoi(argv[1]));
 	}
 	return (0);
-}
-*/
+}*/
