@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 12:41:28 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/16 17:17:52 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/20 16:31:07 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ size_t		ft_strlen(const char *s)
 	unsigned int i;
 
 	i = 0;
-	if (s == NULL)
-		return (0);
 	while (s[i] != '\0')
 		i++;
 	return (i);

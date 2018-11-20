@@ -55,11 +55,16 @@ SOURCES = ft_isascii.c \
 		  ft_strncat.c \
 		  ft_strnstr.c \
 		  ft_strtrim.c \
-		  ft_itoa.c
+		  ft_itoa.c \
+		  ft_lstnew.c \
+		  ft_lstdelone.c \
+		  ft_lstdel.c \
+		  ft_lstadd.c \
+		  ft_lstiter.c
 
 OBJECT = $(SOURCES:.c=.o)
 
-$(NAME):
+$(NAME): $(SOURCES)
 	@$(CC) $(FLAGS) -c $(SOURCES)
 	@ar rc $(NAME) $(OBJECT)
 	@ranlib $(NAME)

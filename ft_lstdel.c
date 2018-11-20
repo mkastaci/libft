@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strequ.c                                        :+:      :+:    :+:   */
+/*   ft_lstdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/14 16:42:49 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/20 16:38:40 by mkastaci         ###   ########.fr       */
+/*   Created: 2018/11/20 14:27:35 by mkastaci          #+#    #+#             */
+/*   Updated: 2018/11/20 14:45:17 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strequ(char const *s1, char const *s2)
+void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
-	if (s1 == NULL || s2 == NULL)
-		return (0);
-	return (ft_strcmp(s1, s2) ? 0 : 1);
+	if (*alst && del)
+	{
+		ft_lstdel(&(*alst)->next, del);
+		ft_lstdelone(&(*alst), del);
+	}
 }

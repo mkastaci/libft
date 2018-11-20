@@ -1,20 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strequ.c                                        :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/14 16:42:49 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/20 16:38:40 by mkastaci         ###   ########.fr       */
+/*   Created: 2018/11/20 14:41:42 by mkastaci          #+#    #+#             */
+/*   Updated: 2018/11/20 14:45:53 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strequ(char const *s1, char const *s2)
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	if (s1 == NULL || s2 == NULL)
-		return (0);
-	return (ft_strcmp(s1, s2) ? 0 : 1);
+	if (lst && f)
+	{
+		ft_lstiter(lst->next, f);
+		f(lst);
+	}
 }
