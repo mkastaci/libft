@@ -60,7 +60,8 @@ SOURCES = ft_isascii.c \
 		  ft_lstdelone.c \
 		  ft_lstdel.c \
 		  ft_lstadd.c \
-		  ft_lstiter.c
+		  ft_lstiter.c \
+		  ft_lstmap.c
 
 OBJECT = $(SOURCES:.c=.o)
 
