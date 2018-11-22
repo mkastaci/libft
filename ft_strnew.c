@@ -6,7 +6,7 @@
 /*   By: mkastaci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 15:14:43 by mkastaci          #+#    #+#             */
-/*   Updated: 2018/11/21 20:01:06 by mkastaci         ###   ########.fr       */
+/*   Updated: 2018/11/22 15:00:32 by mkastaci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_strnew(size_t size)
 {
 	char	*ptr;
-	int		i;
+	size_t	i;
 
 	i = 0;
 	ptr = (char*)malloc(sizeof(char) * (size + 1));
